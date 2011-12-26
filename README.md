@@ -1,4 +1,4 @@
-Canvas LMS
+OZONECanvas LMS
 ======
 
 Canvas is a new, open-source LMS by Instructure Inc. It is released under the
