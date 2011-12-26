@@ -20,7 +20,7 @@
 <div id="container">
 <div id="header">
   <a href="#skip_navigation" id="skip_navigation_link"><%= t 'links.skip_navigation', "Skip Navigation" %></a>
-  <a href="<%= root_url %>" class="no-hover"><%= image_tag 'logo.png', :alt => t('links.home', "Instructure Home"), :class => "logo", :style => "filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/images/logo.png)" %></a>
+  <a href="<%= root_url %>" class="no-hover"><%= image_tag 'logo.png', :alt => t('links.home', "MyCampusClone Home"), :class => "logo", :style => "filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/images/logo.png)" %></a>
   <%= (page_header = yield :page_header) ? page_header : render(:partial => 'shared/page_header') %>
   <%= (page_subhead = yield :page_subhead) ? page_subhead : render(:partial => 'shared/page_subhead') %>
   <div class="clear"></div>

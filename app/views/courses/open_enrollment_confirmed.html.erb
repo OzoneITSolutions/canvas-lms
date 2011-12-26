@@ -8,6 +8,6 @@
 <div id="modal-box">
   <div id="modal-box-inner">
     <h2><%= t('headings.received', %{Invitation Received!}) %></h2>
-    <%= t 'details', %{You should get an email at %{email} in the next few minutes.  That email will have a link that you can use to finish the registration process.  Once you've set up your account you'll be able to access content from %{course}. Welcome to Canvas!}, :email => content_tag('b', params[:email]), :course => content_tag('b', @context.name) %>
+    <%= t 'details', %{You should get an email at %{email} in the next few minutes.  That email will have a link that you can use to finish the registration process.  Once you've set up your account you'll be able to access content from %{course}. Welcome to MyCampusClone!}, :email => content_tag('b', params[:email]), :course => content_tag('b', @context.name) %>
   </div>
 </div>
