@@ -50,7 +50,7 @@ gem 'will_paginate',  '2.3.15'
 gem 'xml-simple',     '1.0.12', :require => 'xmlsimple'
 # this is only needed by jammit, but we're pinning at 0.9.4 because 0.9.5 breaks
 gem 'yui-compressor', '0.9.4'
-
+gem 'unicorn'
 group :mysql do
   gem 'mysql',        '2.8.1'
 end

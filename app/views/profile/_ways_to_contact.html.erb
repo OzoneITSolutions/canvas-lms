@@ -397,7 +397,7 @@ $(document).ready(function() {
       <input type="text" class="user_selected sms_number"/><br/>
       <span style="font-size: 0.8em; color: #a44" class="should_be_10_digits"><%= t('validations.should_be_10_digits', "should be 10-digit number") %></span>
     </td>
-  </tr><tr>
+  </tr><!--tr>
     <td><%= before_label(:carrier, "Carrier") %></td>
     <td>
       <select class="user_selected carrier">
@@ -421,7 +421,7 @@ $(document).ready(function() {
     <td>
       <%= text_field :pseudonym, :unique_id, :class => "sms_email" %><br/>
     </td>
-  </tr><tr>
+  </tr--><tr>
     <td colspan="2">
       <button type="submit" class="button"><%= t('buttons.register_sms', "Register SMS") %></button>
     </td>

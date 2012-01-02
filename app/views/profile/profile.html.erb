@@ -4,10 +4,13 @@
 
 <% content_for :right_side do %>
   <%= render :partial => "ways_to_contact" %>
+  <%#= enrollment.class.to_s %>
+  <%# if @domain_root_account.membership_types %>
   <div class="rs-margin-lr">
     <hr />
     <a href="#" class="edit_profile_link button button-sidebar-wide"><%= image_tag "edit.png" %> <%= t('links.edit_profile', "Edit Profile") %></a>
   </div>
+  <%# end %>
 <% end %>
 
 <% jammit_js :profile %>
@@ -26,7 +29,7 @@
     <% editable_name = @user.user_can_edit_name? %>
     <td><%= f.blabel :name, :en => "Full Name" %></td>
     <td><span class="full_name <%= editable_name ? 'display_data' : 'edit_or_show_data' %>"><%=h @user.name %></span>
-      <%= f.text_field :name, :class => "edit_data" if editable_name %>
+      <%= f.text_field :name, :class => "edit_data", :disabled =>"disabled" if editable_name %>
       <span class="edit_or_show_data" style="font-size: 0.8em; color: #888;"><br/><%= t('hints.name', "This name will be used by teachers for grading.") %></span>
   </tr>
   <tr>
@@ -36,13 +39,13 @@
       <span class="edit_or_show_data" style="font-size: 0.8em; color: #888;"><br/><%= t('hints.short_name', "People will see this name in discussions, messages and comments.") %></span>
     </td>
   </tr>
-  <tr>
+  <!--tr>
     <td><%= f.blabel :sortable_name, :en => "Sortable Name" %></td>
     <td><span class="sortable_name <%= editable_name ? 'display_data' : 'edit_or_show_data' %>"><%=h @user.sortable_name %></span>
       <%= f.text_field :sortable_name, :class => "edit_data"  if editable_name %>
       <span class="edit_or_show_data" style="font-size: 0.8em; color: #888;"><br/><%= t('hints.sortable_name', "This name appears in sorted lists.") %></span>
     </td>
-  </tr>
+  </tr-->
   <% active_email_channels = @email_channels.select { |cc| cc.active? } %>
   <% if active_email_channels.length > 1 %>
     <tr>
@@ -73,7 +76,7 @@
     <td><%= f.blabel :time_zone, :en => "Time Zone" %></td>
     <td>
       <span class="time_zone display_data"><%= @user.time_zone || t(:none, "None") %></span>
-      <span class="edit_data"><%= f.time_zone_select :time_zone, ActiveSupport::TimeZone.local, :model => I18nTimeZone, :default => ((@domain_root_account && @domain_root_account.default_time_zone) || '(GMT+5:30) New Delhi') %><%# that default time zone is a value, not text %></span>
+      <span class="edit_data"><%= f.time_zone_select :time_zone, [ ActiveSupport::TimeZone['New Delhi'],ActiveSupport::TimeZone['Kolkata'], ActiveSupport::TimeZone['Chennai'], ActiveSupport::TimeZone['Mumbai']], :model => I18nTimeZone, :default => ((@domain_root_account && @domain_root_account.default_time_zone) || '(GMT+5:30) New Delhi') %><%# that default time zone is a value, not text %></span>
     </td>
   </tr>
   <% if @domain_root_account == Account.default %>
@@ -119,7 +122,9 @@
   </tr>
   <tr class="edit_data_row" style="display: none;">
     <td colspan="2">
+      <% if @real_current_user && @real_current_user != @current_user %>
       <p><a style="font-size: 0.9em" href="<%= user_delete_url(@user.id) %>" class="admin"><%= t('links.delete_profile', "Delete My Profile") %> </a></p>
+      <% end %>
       <button type="submit" class="button"><%= t('buttons.update_profile', "Update Profile") %></button>
       <button type="button" class="cancel_button button-secondary"><%= t('#buttons.cancel', "Cancel") %></button>
     </td>

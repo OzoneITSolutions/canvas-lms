@@ -443,7 +443,7 @@ class User < ActiveRecord::Base
 
   # compatibility only - this isn't really last_name_first
   def last_name_first
-    self.sortable_name
+    self.name
   end
   
   def last_name_first_or_unnamed

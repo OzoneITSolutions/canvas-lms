@@ -69,3 +69,32 @@ $(function(){
   <input type="hidden" name="continue_to" id="continue_to" />
   <%= form.submit "this is here just so you can hit enter to submit the form", :style => "display:none;" %>
 <% end %>
+
+<% js_block :i18n_scope => '@context.setup_course_form' do %>
+<script type="text/javascript">
+$(document).ready(function() {
+  $("#setup_course_form :text:first").focus().select();
+  $("#setup_course_form").submit(function(event) {
+    var data = $(this).getFormData();
+    success = true;
+    if(!data['course[name]']) {
+      $(this).formErrors({
+        'course[name]': I18n.t('errors.course_name_required', "Course name is required")
+      });
+      success = false;
+      } else if(data['course[name]'] == "My Course") {
+      $(this).formErrors({
+        'course[name]': I18n.t('errors.course_name_required', "Course Name Already Taken.")
+      });
+      success = false;
+    } else if(data['course[course_code]'] == "Course-101") {
+      $(this).formErrors({
+        'course[course_code]': I18n.t('errors.course_name_required', "Course Code Already Taken.")
+      });
+      success = false;
+    }
+    return success;
+  });
+});
+</script>
+<% end %>

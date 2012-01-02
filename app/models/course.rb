@@ -162,6 +162,7 @@ class Course < ActiveRecord::Base
   after_save :update_final_scores_on_weighting_scheme_change
   after_save :update_account_associations_if_changed
   before_validation :verify_unique_sis_source_id
+  #validates_uniqueness_of :course_code
   validates_length_of :syllabus_body, :maximum => maximum_long_text_length, :allow_nil => true, :allow_blank => true
   validates_locale :allow_nil => true
   

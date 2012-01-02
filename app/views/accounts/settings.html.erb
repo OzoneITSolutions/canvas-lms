@@ -87,7 +87,7 @@
               <tr>
                 <td><%= f.blabel :default_time_zone, :en => "Default Time Zone" %></td>
                 <td>
-                  <%= f.time_zone_select :default_time_zone, ActiveSupport::TimeZone.us_zones %>
+                  <%= f.time_zone_select :default_time_zone, [ ActiveSupport::TimeZone['New Delhi'],ActiveSupport::TimeZone['Kolkata'], ActiveSupport::TimeZone['Chennai'], ActiveSupport::TimeZone['Mumbai']] %>
                 </td>
               </tr>
               <% unless @account.site_admin? %>

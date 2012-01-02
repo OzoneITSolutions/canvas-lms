@@ -34,13 +34,13 @@
           <div style="font-size: 0.8em; color: #888;"><%= t(:display_name_help, "People will see this name in discussions, messages and comments.") %></div>
         </td>
       </tr>
-      <tr>
+      <!--tr>
         <td><%= f.blabel :sortable_name, :en => "Sortable Name" %></td>
         <td>
           <%= f.text_field :sortable_name %>
           <div style="font-size: 0.8em; color: #888;"><%= t(:sortable_name_help, "This name appears in sorted lists.") %></div>
         </td>
-      </tr>
+      </tr-->
       <% if @root_account.login_handle_name_is_customized? || @root_account.delegated_authentication? %>
         <tr>
           <td><%= blabel :pseudonym, :path, :en => "Email" %></td>
