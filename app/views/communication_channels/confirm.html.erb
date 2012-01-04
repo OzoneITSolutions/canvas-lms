@@ -132,7 +132,7 @@
           <td><%= blabel :user, :name, :en => "Full Name" %></td>
           <td>
             <%= text_field :user, :name, :value => @user.name %>
-            <div style="font-size: 0.8em;"><%= t 'tips.name', "Teachers will use this name for grading." %></div>
+            <div style="font-size: 0.8em;"><%= t 'tips.name', "Teachers will use this name for grading.(eg. firstname lastname)" %></div>
           </td>
         </tr>
         <tr>
@@ -192,12 +192,7 @@ $(document).ready(function() {
         'user[name]': I18n.t('errors.user_name_required', "User name is required")
       });
       success = false;
-      } else if(data['user[name]'] == data['pseudonym[unique_id]']) {
-      $(this).formErrors({
-        'user[name]': I18n.t('errors.user_name_required', "Enter your Full Name")
-      });
-      success = false;
-    } else if(!data['user[short_name]']) {
+      } else if(!data['user[short_name]']) {
       $(this).formErrors({
         unique_id: I18n.t('errors.short_name_required', "Short name is required")
       });
@@ -222,7 +217,12 @@ $(document).ready(function() {
         "pseudonym[password_confirmation]": I18n.t('errors.passwords_dont_match', "Passwords don't match")
       });
       success = false;
-    }
+    } else if(data['user[name]'].match(/[0-9]|\,|\?|\#|\+|\=|\@|\&|\(|\)|\:|\;|\<|\>|\[|\}|\`|\{|\}|\$|\%|\"|\*|\/|\-/)[0] != null){
+      $(this).formErrors({
+        'user[name]': I18n.t('errors.user_name_required', "Enter your valid Full Name")
+      });
+      success = false;
+    } 
     return success;
   });
 });

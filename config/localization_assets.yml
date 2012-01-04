@@ -2,32 +2,72 @@
 # you probably shouldn't edit it directly
 
 javascripts:
-  question_banks:
-    - public/javascripts/translations/question_banks.js
+  moderate_quiz:
+    - public/javascripts/translations/moderate_quiz.js
+  site_admin:
+    - public/javascripts/translations/site_admin.js
+  topic:
+    - public/javascripts/translations/topic.js
+  section:
+    - public/javascripts/translations/section.js
+  quizzes_index:
+    - public/javascripts/translations/quizzes_index.js
+  gradebooks:
+    - public/javascripts/translations/gradebooks.js
+  user:
+    - public/javascripts/translations/user.js
+  sis_import:
+    - public/javascripts/translations/sis_import.js
+  groups:
+    - public/javascripts/translations/groups.js
+  user_name:
+    - public/javascripts/translations/user_name.js
+  context_modules:
+    - public/javascripts/translations/context_modules.js
+  common:
+    - public/javascripts/translations/common.js
+  course:
+    - public/javascripts/translations/course.js
+  discussion_replies:
+    - public/javascripts/translations/discussion_replies.js
+  select_content_dialog:
+    - public/javascripts/translations/select_content_dialog.js
+  eportfolio:
+    - public/javascripts/translations/eportfolio.js
+  rubric_assessment:
+    - public/javascripts/translations/rubric_assessment.js
+  plugins:
+    - public/javascripts/translations/plugins.js
+  manage_avatars:
+    - public/javascripts/translations/manage_avatars.js
+  user_logins:
+    - public/javascripts/translations/user_logins.js
+  prerequisites_lookup:
+    - public/javascripts/translations/prerequisites_lookup.js
+  question_bank:
+    - public/javascripts/translations/question_bank.js
   account_statistics:
     - public/javascripts/translations/account_statistics.js
-  learning_outcome:
-    - public/javascripts/translations/learning_outcome.js
+  question_banks:
+    - public/javascripts/translations/question_banks.js
   link_enrollment:
     - public/javascripts/translations/link_enrollment.js
-  gradebook_uploads:
-    - public/javascripts/translations/gradebook_uploads.js
-  quizzes_bundle:
-    - public/javascripts/translations/quizzes_bundle.js
+  learning_outcome:
+    - public/javascripts/translations/learning_outcome.js
   grading_standards:
     - public/javascripts/translations/grading_standards.js
   gradebook_history:
     - public/javascripts/translations/gradebook_history.js
-  user:
-    - public/javascripts/translations/user.js
+  gradebook_uploads:
+    - public/javascripts/translations/gradebook_uploads.js
+  quizzes_bundle:
+    - public/javascripts/translations/quizzes_bundle.js
+  edit_rubric:
+    - public/javascripts/translations/edit_rubric.js
   course_settings:
     - public/javascripts/translations/course_settings.js
   aligned_outcomes:
     - public/javascripts/translations/aligned_outcomes.js
-  groups:
-    - public/javascripts/translations/groups.js
-  edit_rubric:
-    - public/javascripts/translations/edit_rubric.js
   collaborations:
     - public/javascripts/translations/collaborations.js
   calendar_event:
@@ -36,14 +76,8 @@ javascripts:
     - public/javascripts/translations/assignments.js
   sub_accounts:
     - public/javascripts/translations/sub_accounts.js
-  plugins:
-    - public/javascripts/translations/plugins.js
   user_notes:
     - public/javascripts/translations/user_notes.js
-  calendar:
-    - public/javascripts/translations/calendar.js
-  content_migration:
-    - public/javascripts/translations/content_migration.js
   profile:
     - public/javascripts/translations/profile.js
   learning_outcomes:
@@ -52,71 +86,37 @@ javascripts:
     - public/javascripts/translations/wiki.js
   manage_groups:
     - public/javascripts/translations/manage_groups.js
-  attendance:
-    - public/javascripts/translations/attendance.js
-  quiz_show:
-    - public/javascripts/translations/quiz_show.js
+  calendar:
+    - public/javascripts/translations/calendar.js
+  content_migration:
+    - public/javascripts/translations/content_migration.js
   full_files:
     - public/javascripts/translations/full_files.js
   topics:
     - public/javascripts/translations/topics.js
+  attendance:
+    - public/javascripts/translations/attendance.js
+  quiz_show:
+    - public/javascripts/translations/quiz_show.js
+  take_quiz:
+    - public/javascripts/translations/take_quiz.js
   speed_grader:
     - public/javascripts/translations/speed_grader.js
   user_lists:
     - public/javascripts/translations/user_lists.js
-  take_quiz:
-    - public/javascripts/translations/take_quiz.js
+  conferences:
+    - public/javascripts/translations/conferences.js
   account_settings:
     - public/javascripts/translations/account_settings.js
-  topic:
-    - public/javascripts/translations/topic.js
   grade_summary:
     - public/javascripts/translations/grade_summary.js
-  quizzes_index:
-    - public/javascripts/translations/quizzes_index.js
+  content_exports:
+    - public/javascripts/translations/content_exports.js
   dashboard:
     - public/javascripts/translations/dashboard.js
   full_assignment:
     - public/javascripts/translations/full_assignment.js
   gradebook2:
     - public/javascripts/translations/gradebook2.js
-  moderate_quiz:
-    - public/javascripts/translations/moderate_quiz.js
-  site_admin:
-    - public/javascripts/translations/site_admin.js
-  conferences:
-    - public/javascripts/translations/conferences.js
-  section:
-    - public/javascripts/translations/section.js
-  gradebooks:
-    - public/javascripts/translations/gradebooks.js
-  prerequisites_lookup:
-    - public/javascripts/translations/prerequisites_lookup.js
-  user_name:
-    - public/javascripts/translations/user_name.js
-  sis_import:
-    - public/javascripts/translations/sis_import.js
-  discussion_replies:
-    - public/javascripts/translations/discussion_replies.js
-  select_content_dialog:
-    - public/javascripts/translations/select_content_dialog.js
-  context_modules:
-    - public/javascripts/translations/context_modules.js
-  common:
-    - public/javascripts/translations/common.js
-  course:
-    - public/javascripts/translations/course.js
-  rubric_assessment:
-    - public/javascripts/translations/rubric_assessment.js
-  manage_avatars:
-    - public/javascripts/translations/manage_avatars.js
-  eportfolio:
-    - public/javascripts/translations/eportfolio.js
-  user_logins:
-    - public/javascripts/translations/user_logins.js
-  question_bank:
-    - public/javascripts/translations/question_bank.js
-  content_exports:
-    - public/javascripts/translations/content_exports.js
   common:
     - public/javascripts/translations/_core.js
