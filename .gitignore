@@ -12,7 +12,7 @@ db/*.sqlite3-journal
 db/*.sqlite
 db/demo
 config/GEM_HOME
-config/outgoing_mail.yml
+config/*.yml
 config/environments/*-local.rb
 config/localization_assets.yml
 models.dot

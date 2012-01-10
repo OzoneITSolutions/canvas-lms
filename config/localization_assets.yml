@@ -14,8 +14,6 @@ javascripts:
     - public/javascripts/translations/quizzes_index.js
   gradebooks:
     - public/javascripts/translations/gradebooks.js
-  user:
-    - public/javascripts/translations/user.js
   sis_import:
     - public/javascripts/translations/sis_import.js
   groups:
@@ -26,18 +24,12 @@ javascripts:
     - public/javascripts/translations/context_modules.js
   common:
     - public/javascripts/translations/common.js
-  course:
-    - public/javascripts/translations/course.js
   discussion_replies:
     - public/javascripts/translations/discussion_replies.js
   select_content_dialog:
     - public/javascripts/translations/select_content_dialog.js
-  eportfolio:
-    - public/javascripts/translations/eportfolio.js
   rubric_assessment:
     - public/javascripts/translations/rubric_assessment.js
-  plugins:
-    - public/javascripts/translations/plugins.js
   manage_avatars:
     - public/javascripts/translations/manage_avatars.js
   user_logins:
@@ -46,8 +38,12 @@ javascripts:
     - public/javascripts/translations/prerequisites_lookup.js
   question_bank:
     - public/javascripts/translations/question_bank.js
+  user:
+    - public/javascripts/translations/user.js
   account_statistics:
     - public/javascripts/translations/account_statistics.js
+  eportfolio:
+    - public/javascripts/translations/eportfolio.js
   question_banks:
     - public/javascripts/translations/question_banks.js
   link_enrollment:
@@ -72,18 +68,14 @@ javascripts:
     - public/javascripts/translations/collaborations.js
   calendar_event:
     - public/javascripts/translations/calendar_event.js
-  assignments:
-    - public/javascripts/translations/assignments.js
   sub_accounts:
     - public/javascripts/translations/sub_accounts.js
-  user_notes:
-    - public/javascripts/translations/user_notes.js
-  profile:
-    - public/javascripts/translations/profile.js
-  learning_outcomes:
-    - public/javascripts/translations/learning_outcomes.js
   wiki:
     - public/javascripts/translations/wiki.js
+  user_notes:
+    - public/javascripts/translations/user_notes.js
+  learning_outcomes:
+    - public/javascripts/translations/learning_outcomes.js
   manage_groups:
     - public/javascripts/translations/manage_groups.js
   calendar:
@@ -106,14 +98,22 @@ javascripts:
     - public/javascripts/translations/user_lists.js
   conferences:
     - public/javascripts/translations/conferences.js
+  assignments:
+    - public/javascripts/translations/assignments.js
   account_settings:
     - public/javascripts/translations/account_settings.js
-  grade_summary:
-    - public/javascripts/translations/grade_summary.js
+  profile:
+    - public/javascripts/translations/profile.js
+  plugins:
+    - public/javascripts/translations/plugins.js
   content_exports:
     - public/javascripts/translations/content_exports.js
+  course:
+    - public/javascripts/translations/course.js
   dashboard:
     - public/javascripts/translations/dashboard.js
+  grade_summary:
+    - public/javascripts/translations/grade_summary.js
   full_assignment:
     - public/javascripts/translations/full_assignment.js
   gradebook2:

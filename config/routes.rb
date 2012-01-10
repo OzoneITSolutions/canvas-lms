@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-
+  
   map.resources :submission_comments, :only => :destroy
 
   map.mark_inbox_as_read 'inbox', :controller => 'context', :action => 'mark_inbox_as_read', :conditions => {:method => :delete}
@@ -769,6 +769,6 @@ ActionController::Routing::Routes.draw do |map|
   end
   map.global_outcomes 'outcomes', :controller => 'outcomes', :action => 'global_outcomes'
   map.selection_test 'selection_test', :controller => 'external_content', :action => 'selection_test'
-
+  
   # See how all your routes lay out with "rake routes"
 end

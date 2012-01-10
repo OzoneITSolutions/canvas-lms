@@ -29,3 +29,20 @@ development:
     database: db/canvas_queue_development.sqlite3
     timeout: 5000
     pool: 5
+
+production:
+  adapter: mysql
+  encoding: utf8
+  database: canvas_production
+  host: localhost
+  username: root
+  password: mycampusclone321
+  timeout: 5000
+  queue:
+    adapter: mysql
+    encoding: utf8
+    database: canvas_queue_production
+    host: localhost
+    username: root
+    password: mycampusclone321
+    timeout: 5000
