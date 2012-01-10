@@ -2,7 +2,7 @@
   <div style="float: right; margin-right: 5px;">
     <fb:bookmark></fb:bookmark>
   </div>
-  <h2><%= image_tag "favicon_large.png", :style => 'vertical-align: middle;' %> <%= t :canvas_messages, "MyCampusClone Messages" %></h2>
+  <h2><%= image_tag "/images/canvas/header_canvas_logo.png", :style => 'vertical-align: middle;' %> <%= t :canvas_messages, "MyCampusClone Messages" %></h2>
   <div style="float: left; padding: 0 5px 5px;"><fb:profile-pic uid='<%= @facebook_user_id %>'/></div>
   <div style="float: right; text-align: right; padding-left: 10px; margin-right: 5px;">
     <a href="<%= facebook_settings_url %>" class="button"><%= t :notification_settings, "Notification Settings" %></a>
@@ -29,8 +29,9 @@
   <% end %>
 
 <% else %>
-  <h2><%= image_tag "favicon_large.png", :style => 'vertical-align: middle;' %> <%= t :welcome_title, "Welcome to MyCampusClone" %></h2>
-  <%= t :welcome_message, "Welcome to a new breed of online learning software, courtesy of MyCampusClone. We're here to make it easy for you to use the web to improve learning. Our interface is simple, clean and open, and we work with the tools you and your students are already using -- tools like Facebook -- to provide a more open, collaborative learning experience.  We roll it all up into one powerful, open package that does more than just tracks assignments. It encourages interaction and fosters learning." %>
+  <h2><%= image_tag "/images/canvas/header_canvas_logo.png", :style => 'vertical-align: middle;' %>
+	<br/> <%= t :welcome_title, "Welcome to MyCampusClone" %></h2>
+ <p> <%= t :welcome_message, "Welcome to a new breed of online learning software, courtesy of MyCampusClone. We're here to make it easy for you to use the web to improve learning. Our interface is simple, clean and open, and we work with the tools you and your students are already using -- tools like Facebook -- to provide a more open, collaborative learning experience.  We roll it all up into one powerful, open package that does more than just tracks assignments. It encourages interaction and fosters learning." %></p>
   <div style="text-align: right;">
     <a href="http://www.mycampusclone.com"><%= t :learn_more, "Learn More at mycampusclone.com" %></a>
   </div>
