@@ -86,7 +86,8 @@
       <% if can_manage_admin_users %>
         <tr>
           <td><%= f.blabel :time_zone, :en => "Time Zone" %></td>
-          <td><%= f.time_zone_select :time_zone, ActiveSupport::TimeZone['Kolkata'], ActiveSupport::TimeZone['Chennai'], ActiveSupport::TimeZone['Mumbai']], :default => ((@domain_root_account && @domain_root_account.default_time_zone) || "Mountain Time (US & Canada)"),:value => @user.time_zone %></td>
+          <td><%= f.time_zone_select :time_zone, [ActiveSupport::TimeZone['New Delhi'],ActiveSupport::TimeZone['Kolkata'], ActiveSupport::TimeZone['Chennai'], ActiveSupport::TimeZone['Mumbai']], 
+          :default => ((@domain_root_account && @domain_root_account.default_time_zone)),:value => @user.time_zone %></td>
         </tr>
       <% end %>
       <tr>

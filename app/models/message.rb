@@ -22,7 +22,8 @@ class Message < ActiveRecord::Base
   include Twitter
   include TextHelper
   include ActionController::UrlWriter
-
+  require "net/http"
+  require "uri"
   has_many :attachments, :as => :context
   belongs_to :notification
   belongs_to :context, :polymorphic => true
@@ -444,7 +445,16 @@ class Message < ActiveRecord::Base
     
     def deliver_via_sms
       # for now, this is good.
-      deliver_via_email
+      #deliver_via_email
+      #sms_message = self.last
+      sms_message = self
+      mobile_num = sms_message.to.split('@')[0].to_i
+      body = sms_message.body
+      logger.info "Delivering sms: #{self.inspect}"
+      uri = URI.parse(URI.escape("http://bulksms.mysmsmantra.com:8080/WebSMS/SMSAPI.jsp?username=ozoneit&password=mycampusclone123&sendername=Ozone&mobileno=91#{mobile_num}&message=#{body}"))
+      http = Net::HTTP.new(uri.host, uri.port)
+      response = http.request(Net::HTTP::Get.new(uri.request_uri))
+      complete_dispatch
     end
     
 end

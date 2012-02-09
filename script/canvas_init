@@ -24,8 +24,9 @@ cd $(dirname $(readlink -f $0))/..
 if [ -e "config/GEM_HOME" ]; then
   export GEM_HOME=$(cat config/GEM_HOME)
 fi
-export GEM_HOME=/var/ozoneits/gems
-export RAILS_ENV=production
+#export GEM_HOME=/var/ozoneits/gems
+export GEM_HOME=/home/shyam/gems
+#export RAILS_ENV=production
 
 # run delayed jobs
 exec script/delayed_job $@

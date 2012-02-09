@@ -397,31 +397,19 @@ $(document).ready(function() {
       <input type="text" class="user_selected sms_number"/><br/>
       <span style="font-size: 0.8em; color: #a44" class="should_be_10_digits"><%= t('validations.should_be_10_digits', "should be 10-digit number") %></span>
     </td>
-  </tr><!--tr>
+  </tr><tr style="display: none;" >
     <td><%= before_label(:carrier, "Carrier") %></td>
     <td>
       <select class="user_selected carrier">
-        <option value="other"><%= t(:default_carrier_option, "[Select Carrier]") %></option>
-        <option value="#@txt.att.net"><%= t('carriers.a_t_and_t', "AT&T") %></option>
-        <option value="#@message.alltel.com"><%= t('carriers.alltel', "Alltel") %></option>
-        <option value="#@myboostmobile.com"><%= t('carriers.boost', "Boost") %></option>
-        <option value="#@cingularme.com"><%= t('carriers.cingular', "Cingular") %></option>
-        <option value="#@mobile.celloneusa.com"><%= t('carriers.cellular_one', "CellularOne") %></option>
-        <option value="#@sms.mycricket.com"><%= t('carriers.cricket', "Cricket") %></option>
-        <option value="#@messaging.nextel.com"><%= t('carriers.nextel', "Nextel") %></option>
-        <option value="#@messaging.sprintpcs.com"><%= t('carriers.sprint_psc', "Sprint PCS") %></option>
-        <option value="#@tmomail.net"><%= t('carriers.t_mobile', "T-Mobile") %></option>
-        <option value="#@vtext.com"><%= t('carriers.verizon', "Verizon") %></option>
-        <option value="#@vmobl.com"><%= t('carriers.virgin_mobile', "Virgin Mobile") %></option>
-        <option value="other"><%= t('carriers.other', "Other Carrier") %></option>
+        <option value="#@mycampusclone.com"><%= t('carriers.a_t_and_t', "mycampusclone") %></option>
       </select>
     </td>
-  </tr><tr>
+  </tr><tr style="display: none;" >
     <td style="white-space: nowrap; vertical-align: top;"><%= before_label(:sms_email, "SMS Email") %></td>
     <td>
       <%= text_field :pseudonym, :unique_id, :class => "sms_email" %><br/>
     </td>
-  </tr--><tr>
+  </tr><tr>
     <td colspan="2">
       <button type="submit" class="button"><%= t('buttons.register_sms', "Register SMS") %></button>
     </td>

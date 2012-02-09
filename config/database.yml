@@ -1,3 +1,17 @@
+
+development:
+  adapter: sqlite3
+  encoding: utf8
+  database: db/canvas_development.sqlite3
+  timeout: 5000
+  pool: 5
+  queue:
+    adapter: sqlite3
+    encoding: utf8
+    database: db/canvas_queue_development.sqlite3
+    timeout: 5000
+    pool: 5
+
 test:
   adapter: sqlite3
   encoding: utf8
@@ -17,18 +31,6 @@ test-in-memory:
   database: ':memory:'
   pool: 1
 
-development:
-  adapter: sqlite3
-  encoding: utf8
-  database: db/canvas_development.sqlite3
-  timeout: 5000
-  pool: 5
-  queue:
-    adapter: sqlite3
-    encoding: utf8
-    database: db/canvas_queue_development.sqlite3
-    timeout: 5000
-    pool: 5
 
 production:
   adapter: mysql

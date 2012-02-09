@@ -3,7 +3,7 @@ development:
 
 production:
   domain: "demo.mycampusclone.com"
-  files_domain: "canvasfiles.mycampusclone.com"
+ # files_domain: "canvasfiles.mycampusclone.com"
  # domain: "canvas.example.com"
   # files_domain: "canvasfiles.example.com"
 
