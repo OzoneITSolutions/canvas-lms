@@ -2,11 +2,11 @@ development:
   address: "smtp.gmail.com"
   port: "587"
   tls: "true"
-  user_name: "hostmaster@mycampusclone.com"
+  user_name: "noreply@mycampusclone.com"
   password: "mycampusclone123"
   authentication: "plain" # plain, login, or cram_md5
   domain: "gmail.com"
-  outgoing_address: "hostmaster@mycampusclone.com"
+  outgoing_address: "noreply@mycampusclone.com"
   default_name: "MyCampusClone"
 
 
@@ -22,11 +22,11 @@ production:
   address: "smtp.gmail.com"
   port: "587"
   tls: "true"
-  user_name: "hostmaster@mycampusclone.com"
+  user_name: "noreply@mycampusclone.com"
   password: "mycampusclone123"
   authentication: "plain" # plain, login, or cram_md5
   domain: "gmail.com"
-  outgoing_address: "hostmaster@mycampusclone.com"
+  outgoing_address: "noreply@mycampusclone.com"
   default_name: "MyCampusClone"
 
 # address: "smtp.example.com"

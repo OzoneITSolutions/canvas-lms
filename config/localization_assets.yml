@@ -2,121 +2,121 @@
 # you probably shouldn't edit it directly
 
 javascripts:
-  moderate_quiz:
-    - public/javascripts/translations/moderate_quiz.js
-  site_admin:
-    - public/javascripts/translations/site_admin.js
-  topic:
-    - public/javascripts/translations/topic.js
-  section:
-    - public/javascripts/translations/section.js
-  quizzes_index:
-    - public/javascripts/translations/quizzes_index.js
-  gradebooks:
-    - public/javascripts/translations/gradebooks.js
-  sis_import:
-    - public/javascripts/translations/sis_import.js
-  groups:
-    - public/javascripts/translations/groups.js
-  user_name:
-    - public/javascripts/translations/user_name.js
-  context_modules:
-    - public/javascripts/translations/context_modules.js
-  common:
-    - public/javascripts/translations/common.js
-  discussion_replies:
-    - public/javascripts/translations/discussion_replies.js
-  select_content_dialog:
-    - public/javascripts/translations/select_content_dialog.js
-  rubric_assessment:
-    - public/javascripts/translations/rubric_assessment.js
-  manage_avatars:
-    - public/javascripts/translations/manage_avatars.js
-  user_logins:
-    - public/javascripts/translations/user_logins.js
-  prerequisites_lookup:
-    - public/javascripts/translations/prerequisites_lookup.js
-  question_bank:
-    - public/javascripts/translations/question_bank.js
-  user:
-    - public/javascripts/translations/user.js
-  account_statistics:
-    - public/javascripts/translations/account_statistics.js
-  eportfolio:
-    - public/javascripts/translations/eportfolio.js
-  question_banks:
-    - public/javascripts/translations/question_banks.js
-  link_enrollment:
-    - public/javascripts/translations/link_enrollment.js
-  learning_outcome:
-    - public/javascripts/translations/learning_outcome.js
-  grading_standards:
-    - public/javascripts/translations/grading_standards.js
-  gradebook_history:
-    - public/javascripts/translations/gradebook_history.js
-  gradebook_uploads:
-    - public/javascripts/translations/gradebook_uploads.js
-  quizzes_bundle:
-    - public/javascripts/translations/quizzes_bundle.js
-  edit_rubric:
-    - public/javascripts/translations/edit_rubric.js
-  course_settings:
-    - public/javascripts/translations/course_settings.js
-  aligned_outcomes:
-    - public/javascripts/translations/aligned_outcomes.js
-  collaborations:
-    - public/javascripts/translations/collaborations.js
-  calendar_event:
-    - public/javascripts/translations/calendar_event.js
-  sub_accounts:
-    - public/javascripts/translations/sub_accounts.js
-  wiki:
-    - public/javascripts/translations/wiki.js
-  user_notes:
-    - public/javascripts/translations/user_notes.js
-  learning_outcomes:
-    - public/javascripts/translations/learning_outcomes.js
-  manage_groups:
-    - public/javascripts/translations/manage_groups.js
-  calendar:
-    - public/javascripts/translations/calendar.js
-  content_migration:
-    - public/javascripts/translations/content_migration.js
-  full_files:
-    - public/javascripts/translations/full_files.js
-  topics:
-    - public/javascripts/translations/topics.js
-  attendance:
-    - public/javascripts/translations/attendance.js
-  quiz_show:
-    - public/javascripts/translations/quiz_show.js
-  take_quiz:
-    - public/javascripts/translations/take_quiz.js
-  speed_grader:
-    - public/javascripts/translations/speed_grader.js
-  user_lists:
-    - public/javascripts/translations/user_lists.js
-  conferences:
-    - public/javascripts/translations/conferences.js
   assignments:
     - public/javascripts/translations/assignments.js
-  account_settings:
-    - public/javascripts/translations/account_settings.js
-  profile:
-    - public/javascripts/translations/profile.js
-  plugins:
-    - public/javascripts/translations/plugins.js
-  content_exports:
-    - public/javascripts/translations/content_exports.js
+  user_logins:
+    - public/javascripts/translations/user_logins.js
+  question_banks:
+    - public/javascripts/translations/question_banks.js
+  sub_accounts:
+    - public/javascripts/translations/sub_accounts.js
   course:
     - public/javascripts/translations/course.js
-  dashboard:
-    - public/javascripts/translations/dashboard.js
-  grade_summary:
-    - public/javascripts/translations/grade_summary.js
+  profile:
+    - public/javascripts/translations/profile.js
+  speed_grader:
+    - public/javascripts/translations/speed_grader.js
+  prerequisites_lookup:
+    - public/javascripts/translations/prerequisites_lookup.js
+  quizzes_index:
+    - public/javascripts/translations/quizzes_index.js
+  groups:
+    - public/javascripts/translations/groups.js
+  take_quiz:
+    - public/javascripts/translations/take_quiz.js
+  plugins:
+    - public/javascripts/translations/plugins.js
+  quizzes_bundle:
+    - public/javascripts/translations/quizzes_bundle.js
+  user:
+    - public/javascripts/translations/user.js
+  account_settings:
+    - public/javascripts/translations/account_settings.js
+  question_bank:
+    - public/javascripts/translations/question_bank.js
+  manage_avatars:
+    - public/javascripts/translations/manage_avatars.js
+  learning_outcomes:
+    - public/javascripts/translations/learning_outcomes.js
+  topics:
+    - public/javascripts/translations/topics.js
+  course_settings:
+    - public/javascripts/translations/course_settings.js
+  content_exports:
+    - public/javascripts/translations/content_exports.js
+  rubric_assessment:
+    - public/javascripts/translations/rubric_assessment.js
+  calendar:
+    - public/javascripts/translations/calendar.js
+  learning_outcome:
+    - public/javascripts/translations/learning_outcome.js
+  gradebook_uploads:
+    - public/javascripts/translations/gradebook_uploads.js
+  sis_import:
+    - public/javascripts/translations/sis_import.js
+  account_statistics:
+    - public/javascripts/translations/account_statistics.js
+  manage_groups:
+    - public/javascripts/translations/manage_groups.js
+  aligned_outcomes:
+    - public/javascripts/translations/aligned_outcomes.js
+  site_admin:
+    - public/javascripts/translations/site_admin.js
+  moderate_quiz:
+    - public/javascripts/translations/moderate_quiz.js
+  full_files:
+    - public/javascripts/translations/full_files.js
+  eportfolio:
+    - public/javascripts/translations/eportfolio.js
+  attendance:
+    - public/javascripts/translations/attendance.js
+  calendar_event:
+    - public/javascripts/translations/calendar_event.js
+  quiz_show:
+    - public/javascripts/translations/quiz_show.js
+  discussion_replies:
+    - public/javascripts/translations/discussion_replies.js
+  wiki:
+    - public/javascripts/translations/wiki.js
+  conferences:
+    - public/javascripts/translations/conferences.js
   full_assignment:
     - public/javascripts/translations/full_assignment.js
+  gradebook_history:
+    - public/javascripts/translations/gradebook_history.js
+  gradebooks:
+    - public/javascripts/translations/gradebooks.js
+  user_notes:
+    - public/javascripts/translations/user_notes.js
+  select_content_dialog:
+    - public/javascripts/translations/select_content_dialog.js
+  content_migration:
+    - public/javascripts/translations/content_migration.js
+  grading_standards:
+    - public/javascripts/translations/grading_standards.js
+  user_lists:
+    - public/javascripts/translations/user_lists.js
+  collaborations:
+    - public/javascripts/translations/collaborations.js
+  grade_summary:
+    - public/javascripts/translations/grade_summary.js
+  link_enrollment:
+    - public/javascripts/translations/link_enrollment.js
+  user_name:
+    - public/javascripts/translations/user_name.js
+  section:
+    - public/javascripts/translations/section.js
+  context_modules:
+    - public/javascripts/translations/context_modules.js
+  dashboard:
+    - public/javascripts/translations/dashboard.js
   gradebook2:
     - public/javascripts/translations/gradebook2.js
+  edit_rubric:
+    - public/javascripts/translations/edit_rubric.js
+  common:
+    - public/javascripts/translations/common.js
+  topic:
+    - public/javascripts/translations/topic.js
   common:
     - public/javascripts/translations/_core.js

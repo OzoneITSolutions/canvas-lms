@@ -2,7 +2,7 @@
 <html lang="en"> 
 <head> 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
-  <title>Page Error</title>
+  <title>Page Not Found</title> 
   <noscript> <meta http-equiv=refresh content="0; URL=/javascript-is-required.html" /> </noscript> 
   <!--[if lte IE 6]> <meta http-equiv=refresh content="0; URL=/ie-6-is-not-supported.html" /> <![endif]-->
   <link href="/assets/common.css?1274476615" media="all" rel="stylesheet" type="text/css" /> 
@@ -13,7 +13,7 @@
     <a href="#content" id="skip_navigation_link">Skip To Content</a> 
     <div id="topbar"> 
       <ul id="identity"> 
-        <li class="no-left-border"><a href="/register">Sign Up as a Teacher</a></li> 
+        <!--li class="no-left-border"><a href="/register">Sign Up as a Teacher</a></li--> 
         <li><a href="/login">Log In</a></li> 
       </ul>
     </div> 
@@ -30,11 +30,11 @@
         </div> 
         <div id="content"> 
           <div style="width: 410px; margin-left: auto; margin-right: auto; margin-top: 50px;"> 
-            <h2>Page Error</h2>
-            <p>Well, looks like something broke.  Sorry you had to see that.</p>
-            <a href="#" style="font-size: 1.2em;" class="submit_error_link discussion-topic">Tell us what you were looking for.</a> 
+            <h2>Page Not Found</h2>
+            <p>Oops, we couldn't find that page.</p>
+            <a href="#" style="font-size: 1.2em;" class="submit_error_link discussion-topic">Click here to tell us what you were looking for.</a> 
             <form id="submit_error_form" style="display: none;" action="/errors" method="POST"> 
-              <input id="error_category" name="error[category]" type="hidden" value="500" /> 
+              <input id="error_category" name="error[category]" type="hidden" value="404" /> 
               <input id="error_id" name="error[id]" type="hidden" /> 
               <input id="error_url" name="error[url]" type="hidden" value="the value of this field should be changed by javascript on dom ready." /> 
               <div style="width: 100%; margin: 0px auto;"> 
@@ -49,8 +49,7 @@
         </div> 
       </div> 
       <div id="footer"> 
-        <a href="http://www.instructure.com"><img alt="Powered By Instructure" src="/images/footer-logo.png?1274476615" /></a> 
-        <a href="http://support.instructure.com">Support</a>
+        <a href="http://ozoneitsolutions.com"><img alt="Powered By Ozoneitsolutions" src="/images/footer-logo.png?1274476615" /></a> 
       </div> 
     </div> 
   </div> 
@@ -66,8 +65,8 @@
   </script> 
   <script src="/assets/common.js?1274476615" type="text/javascript"></script> 
   <script> 
-  $("input#error_url").val(window.location.toString());
   $(document).ready(function() {
+    $("input#error_url").val(window.location.toString());
     $(".submit_error_link").click(function(event) {
       event.preventDefault();
       $("#submit_error_form").slideToggle(function() {
